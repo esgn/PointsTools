@@ -1,1 +1,1 @@
-docker build -t pointstools .
+docker build --no-cache -t pointstools .
