@@ -1,8 +1,8 @@
 module.exports = {
-	inputFolder: '/home/gchoqueux/Cloud/LIDAR_HD',
-	outputFolder: '/home/gchoqueux/Cloud/LIDAR_HD/ept_color',
+	inputFolder: '/input/data',
+	outputFolder: '/output',
 	threads: 1,
-	colorize: false,
+	colorize: true,
 	verboseEntwine: true,
 	projection: {
 		crs: 'EPSG:2154',
