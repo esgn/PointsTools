@@ -17,7 +17,7 @@ RUN wget -nv https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.
 
 RUN conda update -n base -c defaults conda
 
-RUN git clone https://github.com/iTowns/PointsTools.git
+RUN git clone https://github.com/esgn/PointsTools.git
 WORKDIR PointsTools
 
 RUN conda env create -n pointstools -f environment.yml
