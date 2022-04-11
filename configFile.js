@@ -1,5 +1,5 @@
 module.exports = {
-	inputFolder: '/input/data',
+	inputFolder: '/input',
 	outputFolder: '/output',
 	threads: 1,
 	colorize: true,
