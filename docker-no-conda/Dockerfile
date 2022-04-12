@@ -34,6 +34,7 @@ RUN LDFLAGS="$LDFLAGS -Wl,-rpath-link,$INSTALL_PREFIX/lib" cmake .. \
       && make -j$(($(nproc) + 1)) \
       && make install \
       && ldconfig
+RUN rm -rf /opt/entwine/
 
 # PointTools
 RUN mkdir /opt/pointstools
