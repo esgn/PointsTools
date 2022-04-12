@@ -32,7 +32,8 @@ RUN LDFLAGS="$LDFLAGS -Wl,-rpath-link,$INSTALL_PREFIX/lib" cmake .. \
       -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} \
       -DCMAKE_BUILD_TYPE=RelWithDebInfo \
       && make -j$(($(nproc) + 1)) \
-      && make install
+      && make install \
+      && ldconfig
 
 # PointTools
 RUN mkdir /opt/pointstools
