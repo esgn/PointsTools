@@ -1,7 +1,7 @@
 module.exports = {
 	inputFolder: '/input',
 	outputFolder: '/output',
-	threads: 1,
+	threads: 12,
 	colorize: true,
 	verboseEntwine: true,
 	projection: {
